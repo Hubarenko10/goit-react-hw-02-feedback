@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { NotificationStyle } from "./NotificationStyle"
 
 
@@ -8,4 +9,8 @@ return (
 <>
 {message && <NotificationStyle>{message}</NotificationStyle>}
 </>)
+}
+
+Notification.propTypes ={
+message: PropTypes.string.isRequired,
 }

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Title, SectionStyle } from "./SectionStyle"
 
 
@@ -10,4 +11,8 @@ return(
 </SectionStyle>
 )
 
+}
+
+Section.propTypes ={
+title: PropTypes.string.isRequired,
 }

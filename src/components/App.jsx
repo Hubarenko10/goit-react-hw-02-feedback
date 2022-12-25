@@ -20,7 +20,7 @@ export class App extends Component{
   return total.reduce((acc,value) => acc + value,0);
   }
   countPositiveFeedbackPercentage = (good,total) => {
-  return  ((100 * good) / total);
+  return  Math.round((100 * good) / total);
   }
   render(){
     const {good,neutral,bad} = this.state;

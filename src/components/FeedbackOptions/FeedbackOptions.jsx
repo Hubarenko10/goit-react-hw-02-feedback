@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import { Button } from "./FeedbackOptionsStyle"
 
 export const FeedbackOptions = ({options,onLeaveFeedback})=>{
-    return options.map((option,idx)=>{
+    return options.map((option)=>{
     return(
-        <Button key={idx} onClick={()=>{onLeaveFeedback(option)}} type="button">
+        <Button key={option} onClick={()=>{onLeaveFeedback(option)}} type="button">
             
             {firstLetterToUpper(option)}
         </Button>
